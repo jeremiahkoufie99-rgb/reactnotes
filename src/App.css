@@ -1,0 +1,47 @@
+/* Main Application */
+.app {
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+/* Main Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
+
+/* Page Heading */
+.container h1 {
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Notes Grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  .container h1 {
+    font-size: 26px;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
